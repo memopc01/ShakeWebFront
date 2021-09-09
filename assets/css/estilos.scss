@@ -24,19 +24,26 @@ html {
 }
 
 body {
-    font-family: 'Cerebri Sans Book';
+    font-family: 'Roboto', sans-serif;
     color: $texto;
+}
+
+.display-1{
+    font-family: 'Source Code Pro', monospace;
 }
 
 .texto{
     
-    color: $texto!important;
+    color: $blanco!important;
 }
 
-.precio{
-    margin-top: 2rem;
-    color:$precio !important;
-}
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
 
 /*-----------------------------------------
 3. ESTILOS COLOR PRINCIPAL
@@ -72,7 +79,7 @@ HERO
 
 
 .jumbotron {
-    background-image: url("/assets/images/hero.png");
+    background-image: url("/assets/images/shake.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

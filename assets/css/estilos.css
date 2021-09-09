@@ -6,21 +6,27 @@
   font-family: 'Cerebri Sans Book';
   font-style: normal;
   font-weight: normal;
-  src: local('Cerebri Sans Book'), url('Cerebri Sans Book.woff') format('woff');
-  }
+  src: local("Cerebri Sans Book"), url("Cerebri Sans Book.woff") format("woff"); }
 html {
   font-size: 13px; }
 
 body {
-  font-family: 'Cerebri Sans Book';
+  font-family: 'Roboto', sans-serif;
   color: #132430; }
 
-.texto {
-  color: #132430 !important; }
+.display-1 {
+  font-family: 'Source Code Pro', monospace; }
 
-.precio {
-  margin-top: 2rem;
-  color: #FF914D !important; }
+.texto {
+  color: #F6F6F6 !important; }
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center; }
 
 /*-----------------------------------------
 3. ESTILOS COLOR PRINCIPAL
@@ -44,7 +50,7 @@ body {
 HERO
 -----------------------------------------*/
 .jumbotron {
-  background-image: url("/assets/images/hero.png");
+  background-image: url("/assets/images/shake.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +100,6 @@ i {
 .js .cd-top {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
   transition: opacity 0.3s, visibility 0.3s, background-color 0.3s; }
 
 .cd-top {
@@ -108,8 +113,7 @@ i {
   height: var(--cd-back-to-top-size);
   width: 40px;
   width: var(--cd-back-to-top-size);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
   background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
   background-color: #e667a1 !important;
   background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8); }
